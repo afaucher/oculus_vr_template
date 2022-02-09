@@ -19878,8 +19878,6 @@ public:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevice_CheckValidAndSetDefault_TisRuntimeObject_mB1DC4F44C93991E507914DA668A104D0CD5D8982_gshared (InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E * __this, RuntimeObject ** ___value0, const RuntimeMethod* method);
 // System.Boolean UnityEngine.XR.InputDevice::CheckValidAndSetDefault<UnityEngine.Quaternion>(T&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevice_CheckValidAndSetDefault_TisQuaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4_m318BA27D054B0B3AD603459D7319D71A5F1628BC_gshared (InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E * __this, Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4 * ___value0, const RuntimeMethod* method);
-// System.Boolean UnityEngine.XR.InputDevice::CheckValidAndSetDefault<System.Single>(T&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevice_CheckValidAndSetDefault_TisSingle_tE07797BA3C98D4CA9B5A19413C19A76688AB899E_m4D94D31E9E50C44EDE9D0F940CBA6D8F0B6FAC3D_gshared (InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E * __this, float* ___value0, const RuntimeMethod* method);
 // System.Boolean UnityEngine.XR.InputDevice::CheckValidAndSetDefault<UnityEngine.Vector2>(T&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevice_CheckValidAndSetDefault_TisVector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9_m96137C0805A9D56E56BAB8BE30FE94806EB83AB6_gshared (InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E * __this, Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9 * ___value0, const RuntimeMethod* method);
 // UnityEngine.InputSystem.Layouts.InputDeviceMatcher UnityEngine.InputSystem.Layouts.InputDeviceMatcher::WithCapability<System.Int32>(System.String,TValue)
@@ -19952,11 +19950,6 @@ inline bool InputDevice_CheckValidAndSetDefault_TisRuntimeObject_mB1DC4F44C93991
 inline bool InputDevice_CheckValidAndSetDefault_TisQuaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4_m318BA27D054B0B3AD603459D7319D71A5F1628BC (InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E * __this, Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4 * ___value0, const RuntimeMethod* method)
 {
 	return ((  bool (*) (InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E *, Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4 *, const RuntimeMethod*))InputDevice_CheckValidAndSetDefault_TisQuaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4_m318BA27D054B0B3AD603459D7319D71A5F1628BC_gshared)(__this, ___value0, method);
-}
-// System.Boolean UnityEngine.XR.InputDevice::CheckValidAndSetDefault<System.Single>(T&)
-inline bool InputDevice_CheckValidAndSetDefault_TisSingle_tE07797BA3C98D4CA9B5A19413C19A76688AB899E_m4D94D31E9E50C44EDE9D0F940CBA6D8F0B6FAC3D (InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E * __this, float* ___value0, const RuntimeMethod* method)
-{
-	return ((  bool (*) (InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E *, float*, const RuntimeMethod*))InputDevice_CheckValidAndSetDefault_TisSingle_tE07797BA3C98D4CA9B5A19413C19A76688AB899E_m4D94D31E9E50C44EDE9D0F940CBA6D8F0B6FAC3D_gshared)(__this, ___value0, method);
 }
 // System.Boolean UnityEngine.XR.InputDevice::CheckValidAndSetDefault<UnityEngine.Vector2>(T&)
 inline bool InputDevice_CheckValidAndSetDefault_TisVector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9_m96137C0805A9D56E56BAB8BE30FE94806EB83AB6 (InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E * __this, Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9 * ___value0, const RuntimeMethod* method)
@@ -20507,33 +20500,6 @@ IL2CPP_EXTERN_C  bool InputDevice_CheckValidAndSetDefault_TisQuaternion_t6D28618
 	InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E * _thisAdjusted = reinterpret_cast<InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E *>(__this + _offset);
 	bool _returnValue;
 	_returnValue = InputDevice_CheckValidAndSetDefault_TisQuaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4_m318BA27D054B0B3AD603459D7319D71A5F1628BC(_thisAdjusted, ___value0, method);
-	return _returnValue;
-}
-// System.Boolean UnityEngine.XR.InputDevice::CheckValidAndSetDefault<System.Single>(T&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevice_CheckValidAndSetDefault_TisSingle_tE07797BA3C98D4CA9B5A19413C19A76688AB899E_m4D94D31E9E50C44EDE9D0F940CBA6D8F0B6FAC3D_gshared (InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E * __this, float* ___value0, const RuntimeMethod* method)
-{
-	bool V_0 = false;
-	{
-		float* L_0 = ___value0;
-		il2cpp_codegen_initobj(L_0, sizeof(float));
-		bool L_1;
-		L_1 = InputDevice_IsValidId_mA4DA4E9823C089329BD48D79936D70499EDF8B1F((InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E *)(InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E *)__this, /*hidden argument*/NULL);
-		V_0 = (bool)L_1;
-		goto IL_0011;
-	}
-
-IL_0011:
-	{
-		bool L_2 = V_0;
-		return (bool)L_2;
-	}
-}
-IL2CPP_EXTERN_C  bool InputDevice_CheckValidAndSetDefault_TisSingle_tE07797BA3C98D4CA9B5A19413C19A76688AB899E_m4D94D31E9E50C44EDE9D0F940CBA6D8F0B6FAC3D_AdjustorThunk (RuntimeObject * __this, float* ___value0, const RuntimeMethod* method)
-{
-	int32_t _offset = 1;
-	InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E * _thisAdjusted = reinterpret_cast<InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E *>(__this + _offset);
-	bool _returnValue;
-	_returnValue = InputDevice_CheckValidAndSetDefault_TisSingle_tE07797BA3C98D4CA9B5A19413C19A76688AB899E_m4D94D31E9E50C44EDE9D0F940CBA6D8F0B6FAC3D(_thisAdjusted, ___value0, method);
 	return _returnValue;
 }
 // System.Boolean UnityEngine.XR.InputDevice::CheckValidAndSetDefault<UnityEngine.Vector2>(T&)

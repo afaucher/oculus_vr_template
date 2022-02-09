@@ -32,7 +32,6 @@
 		<type fullname="UnityEngine.MeshCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.CapsuleCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.BoxCollider" preserve="nothing"/>
-		<type fullname="UnityEngine.SphereCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.GameObject" preserve="nothing"/>
 		<type fullname="UnityEngine.LightmapSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.Mesh" preserve="nothing"/>

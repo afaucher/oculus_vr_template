@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TruckController : MonoBehaviour
 {
+    public GameObject gridObject;
+    public float probeOffset = 0.5F;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +28,15 @@ public class TruckController : MonoBehaviour
         float speed = 1F * input.y;
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
         float rotation = 45F * input.x;
+        if (input.y < 0)
+        {
+            // "Wheel simulation"
+            rotation = -rotation;
+        }
         transform.Rotate(0, Time.deltaTime * rotation, 0);
+
+        Vector3 probeLocation = transform.position + transform.forward * probeOffset;
+
+        gridObject.GetComponent<Grid>().TryPlaceBlock(probeLocation);
     }
 }

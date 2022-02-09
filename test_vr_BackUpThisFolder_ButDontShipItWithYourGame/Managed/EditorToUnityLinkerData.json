@@ -352,15 +352,6 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "SphereCollider",
-            "fullManagedTypeName": "UnityEngine.SphereCollider",
-            "moduleName": "Physics",
-            "usedInScenes": [
-                "Assets/Scenes/SampleScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "GameObject",
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",

@@ -278,6 +278,8 @@ struct AvatarComponentMaterialPropertiesU5BU5D_t6E3BDB3CB0001F5076F90A25543CADFD
 struct AvatarTextureArrayPropertiesU5BU5D_tDE8C7811BDC958AE418C1D0B8F3B9E2529A134D7;
 // OvrAvatarTextureCopyManager/FallbackTextureSet[]
 struct FallbackTextureSetU5BU5D_t52D9A01B29DF82A652EB1683D9BA01AB61F8A8E1;
+// UnityEngine.GameObject[0...,0...]
+struct GameObjectU5BU2CU5D_t21BFB7BF24ABCC4325F4CD839223D6CA713750D9;
 // System.String[0...,0...]
 struct StringU5BU2CU5D_t57ABDCA8B352E243BFC6950153456ACCEF63DC90;
 // System.Action
@@ -19600,10 +19602,12 @@ struct Grid_t29032245F31DA66818E4D18285FF79A63F6496DF  : public MonoBehaviour_t3
 public:
 	// UnityEngine.GameObject Grid::floorPrefab
 	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___floorPrefab_4;
-	// UnityEngine.GameObject Grid::truck
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___truck_5;
 	// System.Int32 Grid::gridSize
-	int32_t ___gridSize_6;
+	int32_t ___gridSize_5;
+	// System.Single Grid::gridScale
+	float ___gridScale_6;
+	// UnityEngine.GameObject[0...,0...] Grid::floorGrid
+	GameObjectU5BU2CU5D_t21BFB7BF24ABCC4325F4CD839223D6CA713750D9* ___floorGrid_7;
 
 public:
 	inline static int32_t get_offset_of_floorPrefab_4() { return static_cast<int32_t>(offsetof(Grid_t29032245F31DA66818E4D18285FF79A63F6496DF, ___floorPrefab_4)); }
@@ -19615,21 +19619,29 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___floorPrefab_4), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_truck_5() { return static_cast<int32_t>(offsetof(Grid_t29032245F31DA66818E4D18285FF79A63F6496DF, ___truck_5)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_truck_5() const { return ___truck_5; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_truck_5() { return &___truck_5; }
-	inline void set_truck_5(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_gridSize_5() { return static_cast<int32_t>(offsetof(Grid_t29032245F31DA66818E4D18285FF79A63F6496DF, ___gridSize_5)); }
+	inline int32_t get_gridSize_5() const { return ___gridSize_5; }
+	inline int32_t* get_address_of_gridSize_5() { return &___gridSize_5; }
+	inline void set_gridSize_5(int32_t value)
 	{
-		___truck_5 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___truck_5), (void*)value);
+		___gridSize_5 = value;
 	}
 
-	inline static int32_t get_offset_of_gridSize_6() { return static_cast<int32_t>(offsetof(Grid_t29032245F31DA66818E4D18285FF79A63F6496DF, ___gridSize_6)); }
-	inline int32_t get_gridSize_6() const { return ___gridSize_6; }
-	inline int32_t* get_address_of_gridSize_6() { return &___gridSize_6; }
-	inline void set_gridSize_6(int32_t value)
+	inline static int32_t get_offset_of_gridScale_6() { return static_cast<int32_t>(offsetof(Grid_t29032245F31DA66818E4D18285FF79A63F6496DF, ___gridScale_6)); }
+	inline float get_gridScale_6() const { return ___gridScale_6; }
+	inline float* get_address_of_gridScale_6() { return &___gridScale_6; }
+	inline void set_gridScale_6(float value)
 	{
-		___gridSize_6 = value;
+		___gridScale_6 = value;
+	}
+
+	inline static int32_t get_offset_of_floorGrid_7() { return static_cast<int32_t>(offsetof(Grid_t29032245F31DA66818E4D18285FF79A63F6496DF, ___floorGrid_7)); }
+	inline GameObjectU5BU2CU5D_t21BFB7BF24ABCC4325F4CD839223D6CA713750D9* get_floorGrid_7() const { return ___floorGrid_7; }
+	inline GameObjectU5BU2CU5D_t21BFB7BF24ABCC4325F4CD839223D6CA713750D9** get_address_of_floorGrid_7() { return &___floorGrid_7; }
+	inline void set_floorGrid_7(GameObjectU5BU2CU5D_t21BFB7BF24ABCC4325F4CD839223D6CA713750D9* value)
+	{
+		___floorGrid_7 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___floorGrid_7), (void*)value);
 	}
 };
 
@@ -27789,8 +27801,28 @@ public:
 struct TruckController_tC76D089FE753010F9FC39DF349C4AF4FD5759230  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
 {
 public:
+	// UnityEngine.GameObject TruckController::gridObject
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___gridObject_4;
+	// System.Single TruckController::probeOffset
+	float ___probeOffset_5;
 
 public:
+	inline static int32_t get_offset_of_gridObject_4() { return static_cast<int32_t>(offsetof(TruckController_tC76D089FE753010F9FC39DF349C4AF4FD5759230, ___gridObject_4)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_gridObject_4() const { return ___gridObject_4; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_gridObject_4() { return &___gridObject_4; }
+	inline void set_gridObject_4(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	{
+		___gridObject_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___gridObject_4), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_probeOffset_5() { return static_cast<int32_t>(offsetof(TruckController_tC76D089FE753010F9FC39DF349C4AF4FD5759230, ___probeOffset_5)); }
+	inline float get_probeOffset_5() const { return ___probeOffset_5; }
+	inline float* get_address_of_probeOffset_5() { return &___probeOffset_5; }
+	inline void set_probeOffset_5(float value)
+	{
+		___probeOffset_5 = value;
+	}
 };
 
 
@@ -36742,11 +36774,17 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6420[3] =
 	StartMenu_t549376AD4E2045D8D42C75AF8C5ED808D56807F3::get_offset_of_text_5(),
 	StartMenu_t549376AD4E2045D8D42C75AF8C5ED808D56807F3::get_offset_of_vrRig_6(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6421[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6421[4] = 
 {
 	Grid_t29032245F31DA66818E4D18285FF79A63F6496DF::get_offset_of_floorPrefab_4(),
-	Grid_t29032245F31DA66818E4D18285FF79A63F6496DF::get_offset_of_truck_5(),
-	Grid_t29032245F31DA66818E4D18285FF79A63F6496DF::get_offset_of_gridSize_6(),
+	Grid_t29032245F31DA66818E4D18285FF79A63F6496DF::get_offset_of_gridSize_5(),
+	Grid_t29032245F31DA66818E4D18285FF79A63F6496DF::get_offset_of_gridScale_6(),
+	Grid_t29032245F31DA66818E4D18285FF79A63F6496DF::get_offset_of_floorGrid_7(),
+};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6422[2] = 
+{
+	TruckController_tC76D089FE753010F9FC39DF349C4AF4FD5759230::get_offset_of_gridObject_4(),
+	TruckController_tC76D089FE753010F9FC39DF349C4AF4FD5759230::get_offset_of_probeOffset_5(),
 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6423[5] = 
 {

@@ -232,7 +232,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_mC70E3278A727B2503C0
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_mFE30D09243F8466C02EC9E8ABA8683EB9F504132_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputDevice_CheckValidAndSetDefault_TisBoolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_mF81ACFBF626DAB523DDBAA1600546892AA684013_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputDevice_CheckValidAndSetDefault_TisQuaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4_m318BA27D054B0B3AD603459D7319D71A5F1628BC_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* InputDevice_CheckValidAndSetDefault_TisSingle_tE07797BA3C98D4CA9B5A19413C19A76688AB899E_m4D94D31E9E50C44EDE9D0F940CBA6D8F0B6FAC3D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputDevice_CheckValidAndSetDefault_TisVector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9_m96137C0805A9D56E56BAB8BE30FE94806EB83AB6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputDevices_GetDevicesAtXRNode_m266C29E559D4C0B256D754BE6E9512691C82B9D2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputDevices_GetDevicesWithCharacteristics_m8AED20982C7D099E74435E41F8705FAE70ADBDEC_RuntimeMethod_var;
@@ -247,7 +246,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* InputFeatureUsage_1__ctor_mFA680A87265CD872
 IL2CPP_EXTERN_C const RuntimeMethod* InputFeatureUsage_1_get_name_m32B2541C7F12573D226E83F6969409B1DE6374B7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputFeatureUsage_1_get_name_m3732CF9955C758D341A6605EEF5F83A9702B0974_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputFeatureUsage_1_get_name_m3C10F5DE7985A0C8DAFEBBB452E36FA42143DE30_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* InputFeatureUsage_1_get_name_mB77B23ABBBDC4E924A8D17797EFD3488110EA770_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputTracking_GetNodeStates_m0C47A6D099EE6EAC2D64B2D1D23DA72E4D42B880_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputTracking_InvokeTrackingEvent_mF9CC9853D284F640ACEB29225EF35646166061A0_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* IntegratedSubsystemDescriptor_1__ctor_m3E9F6A2B441E056953C153C3B3182C0EB6BD0AFE_RuntimeMethod_var;
@@ -4368,10 +4366,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputFeatureUsage_1__ctor_m1CACB6DCDE111
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevice_CheckValidAndSetDefault_TisBoolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_mF81ACFBF626DAB523DDBAA1600546892AA684013_gshared (InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E * __this, bool* ___value0, const RuntimeMethod* method);
 // System.String UnityEngine.XR.InputFeatureUsage`1<System.Boolean>::get_name()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* InputFeatureUsage_1_get_name_m3732CF9955C758D341A6605EEF5F83A9702B0974_gshared_inline (InputFeatureUsage_1_t28793BE3C4ACB9F1B34C0C392EAAFB16A5FA8E40 * __this, const RuntimeMethod* method);
-// System.Boolean UnityEngine.XR.InputDevice::CheckValidAndSetDefault<System.Single>(T&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevice_CheckValidAndSetDefault_TisSingle_tE07797BA3C98D4CA9B5A19413C19A76688AB899E_m4D94D31E9E50C44EDE9D0F940CBA6D8F0B6FAC3D_gshared (InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E * __this, float* ___value0, const RuntimeMethod* method);
-// System.String UnityEngine.XR.InputFeatureUsage`1<System.Single>::get_name()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* InputFeatureUsage_1_get_name_mB77B23ABBBDC4E924A8D17797EFD3488110EA770_gshared_inline (InputFeatureUsage_1_t9525982C3C73085CB36503407750B9DE0E598BE1 * __this, const RuntimeMethod* method);
 // System.Boolean UnityEngine.XR.InputDevice::CheckValidAndSetDefault<UnityEngine.Vector2>(T&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevice_CheckValidAndSetDefault_TisVector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9_m96137C0805A9D56E56BAB8BE30FE94806EB83AB6_gshared (InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E * __this, Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9 * ___value0, const RuntimeMethod* method);
 // System.String UnityEngine.XR.InputFeatureUsage`1<UnityEngine.Vector2>::get_name()
@@ -4525,20 +4519,6 @@ inline String_t* InputFeatureUsage_1_get_name_m3732CF9955C758D341A6605EEF5F83A97
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevices_TryGetFeatureValue_bool_m3CD1DD8C1A2ED2780747CD4BFEE85F129B1C497D (uint64_t ___deviceId0, String_t* ___usage1, bool* ___value2, const RuntimeMethod* method);
 // System.Boolean UnityEngine.XR.InputDevice::TryGetFeatureValue(UnityEngine.XR.InputFeatureUsage`1<System.Boolean>,System.Boolean&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevice_TryGetFeatureValue_mF70AB4F4BC703E9242A757D0A6D84A4DA48BBBBE (InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E * __this, InputFeatureUsage_1_t28793BE3C4ACB9F1B34C0C392EAAFB16A5FA8E40  ___usage0, bool* ___value1, const RuntimeMethod* method);
-// System.Boolean UnityEngine.XR.InputDevice::CheckValidAndSetDefault<System.Single>(T&)
-inline bool InputDevice_CheckValidAndSetDefault_TisSingle_tE07797BA3C98D4CA9B5A19413C19A76688AB899E_m4D94D31E9E50C44EDE9D0F940CBA6D8F0B6FAC3D (InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E * __this, float* ___value0, const RuntimeMethod* method)
-{
-	return ((  bool (*) (InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E *, float*, const RuntimeMethod*))InputDevice_CheckValidAndSetDefault_TisSingle_tE07797BA3C98D4CA9B5A19413C19A76688AB899E_m4D94D31E9E50C44EDE9D0F940CBA6D8F0B6FAC3D_gshared)(__this, ___value0, method);
-}
-// System.String UnityEngine.XR.InputFeatureUsage`1<System.Single>::get_name()
-inline String_t* InputFeatureUsage_1_get_name_mB77B23ABBBDC4E924A8D17797EFD3488110EA770_inline (InputFeatureUsage_1_t9525982C3C73085CB36503407750B9DE0E598BE1 * __this, const RuntimeMethod* method)
-{
-	return ((  String_t* (*) (InputFeatureUsage_1_t9525982C3C73085CB36503407750B9DE0E598BE1 *, const RuntimeMethod*))InputFeatureUsage_1_get_name_mB77B23ABBBDC4E924A8D17797EFD3488110EA770_gshared_inline)(__this, method);
-}
-// System.Boolean UnityEngine.XR.InputDevices::TryGetFeatureValue_float(System.UInt64,System.String,System.Single&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevices_TryGetFeatureValue_float_mBAE28A75319AAF1FB4AEBABA49F456174329239B (uint64_t ___deviceId0, String_t* ___usage1, float* ___value2, const RuntimeMethod* method);
-// System.Boolean UnityEngine.XR.InputDevice::TryGetFeatureValue(UnityEngine.XR.InputFeatureUsage`1<System.Single>,System.Single&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevice_TryGetFeatureValue_m531D0670B4FBDA6CD5B8E899627B70F3DB840E69 (InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E * __this, InputFeatureUsage_1_t9525982C3C73085CB36503407750B9DE0E598BE1  ___usage0, float* ___value1, const RuntimeMethod* method);
 // System.Boolean UnityEngine.XR.InputDevice::CheckValidAndSetDefault<UnityEngine.Vector2>(T&)
 inline bool InputDevice_CheckValidAndSetDefault_TisVector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9_m96137C0805A9D56E56BAB8BE30FE94806EB83AB6 (InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E * __this, Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9 * ___value0, const RuntimeMethod* method)
 {
@@ -6013,60 +5993,6 @@ IL2CPP_EXTERN_C  bool InputDevice_TryGetFeatureValue_mF70AB4F4BC703E9242A757D0A6
 	_returnValue = InputDevice_TryGetFeatureValue_mF70AB4F4BC703E9242A757D0A6D84A4DA48BBBBE(_thisAdjusted, ___usage0, ___value1, method);
 	return _returnValue;
 }
-// System.Boolean UnityEngine.XR.InputDevice::TryGetFeatureValue(UnityEngine.XR.InputFeatureUsage`1<System.Single>,System.Single&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevice_TryGetFeatureValue_m531D0670B4FBDA6CD5B8E899627B70F3DB840E69 (InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E * __this, InputFeatureUsage_1_t9525982C3C73085CB36503407750B9DE0E598BE1  ___usage0, float* ___value1, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputDevice_CheckValidAndSetDefault_TisSingle_tE07797BA3C98D4CA9B5A19413C19A76688AB899E_m4D94D31E9E50C44EDE9D0F940CBA6D8F0B6FAC3D_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputFeatureUsage_1_get_name_mB77B23ABBBDC4E924A8D17797EFD3488110EA770_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	bool V_0 = false;
-	bool V_1 = false;
-	{
-		float* L_0 = ___value1;
-		bool L_1;
-		L_1 = InputDevice_CheckValidAndSetDefault_TisSingle_tE07797BA3C98D4CA9B5A19413C19A76688AB899E_m4D94D31E9E50C44EDE9D0F940CBA6D8F0B6FAC3D((InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E *)__this, (float*)L_0, /*hidden argument*/InputDevice_CheckValidAndSetDefault_TisSingle_tE07797BA3C98D4CA9B5A19413C19A76688AB899E_m4D94D31E9E50C44EDE9D0F940CBA6D8F0B6FAC3D_RuntimeMethod_var);
-		V_0 = L_1;
-		bool L_2 = V_0;
-		if (!L_2)
-		{
-			goto IL_0022;
-		}
-	}
-	{
-		uint64_t L_3 = __this->get_m_DeviceId_0();
-		String_t* L_4;
-		L_4 = InputFeatureUsage_1_get_name_mB77B23ABBBDC4E924A8D17797EFD3488110EA770_inline((InputFeatureUsage_1_t9525982C3C73085CB36503407750B9DE0E598BE1 *)(&___usage0), /*hidden argument*/InputFeatureUsage_1_get_name_mB77B23ABBBDC4E924A8D17797EFD3488110EA770_RuntimeMethod_var);
-		float* L_5 = ___value1;
-		bool L_6;
-		L_6 = InputDevices_TryGetFeatureValue_float_mBAE28A75319AAF1FB4AEBABA49F456174329239B(L_3, L_4, (float*)L_5, /*hidden argument*/NULL);
-		V_1 = L_6;
-		goto IL_0026;
-	}
-
-IL_0022:
-	{
-		V_1 = (bool)0;
-		goto IL_0026;
-	}
-
-IL_0026:
-	{
-		bool L_7 = V_1;
-		return L_7;
-	}
-}
-IL2CPP_EXTERN_C  bool InputDevice_TryGetFeatureValue_m531D0670B4FBDA6CD5B8E899627B70F3DB840E69_AdjustorThunk (RuntimeObject * __this, InputFeatureUsage_1_t9525982C3C73085CB36503407750B9DE0E598BE1  ___usage0, float* ___value1, const RuntimeMethod* method)
-{
-	int32_t _offset = 1;
-	InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E * _thisAdjusted = reinterpret_cast<InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E *>(__this + _offset);
-	bool _returnValue;
-	_returnValue = InputDevice_TryGetFeatureValue_m531D0670B4FBDA6CD5B8E899627B70F3DB840E69(_thisAdjusted, ___usage0, ___value1, method);
-	return _returnValue;
-}
 // System.Boolean UnityEngine.XR.InputDevice::TryGetFeatureValue(UnityEngine.XR.InputFeatureUsage`1<UnityEngine.Vector2>,UnityEngine.Vector2&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevice_TryGetFeatureValue_m18C3DB44FFE8E7ACFF29F2F83E54A2F057AFF1C5 (InputDevice_t69B790C68145C769BA3819DE33AA94155C77207E * __this, InputFeatureUsage_1_t8BAF53459FF79264F0E3F7F9716191756AFAC625  ___usage0, Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9 * ___value1, const RuntimeMethod* method)
 {
@@ -6760,16 +6686,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevices_TryGetFeatureValue_bool_m3C
 	static InputDevices_TryGetFeatureValue_bool_m3CD1DD8C1A2ED2780747CD4BFEE85F129B1C497D_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (InputDevices_TryGetFeatureValue_bool_m3CD1DD8C1A2ED2780747CD4BFEE85F129B1C497D_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.InputDevices::TryGetFeatureValue_bool(System.UInt64,System.String,System.Boolean&)");
-	bool icallRetVal = _il2cpp_icall_func(___deviceId0, ___usage1, ___value2);
-	return icallRetVal;
-}
-// System.Boolean UnityEngine.XR.InputDevices::TryGetFeatureValue_float(System.UInt64,System.String,System.Single&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputDevices_TryGetFeatureValue_float_mBAE28A75319AAF1FB4AEBABA49F456174329239B (uint64_t ___deviceId0, String_t* ___usage1, float* ___value2, const RuntimeMethod* method)
-{
-	typedef bool (*InputDevices_TryGetFeatureValue_float_mBAE28A75319AAF1FB4AEBABA49F456174329239B_ftn) (uint64_t, String_t*, float*);
-	static InputDevices_TryGetFeatureValue_float_mBAE28A75319AAF1FB4AEBABA49F456174329239B_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (InputDevices_TryGetFeatureValue_float_mBAE28A75319AAF1FB4AEBABA49F456174329239B_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.InputDevices::TryGetFeatureValue_float(System.UInt64,System.String,System.Single&)");
 	bool icallRetVal = _il2cpp_icall_func(___deviceId0, ___usage1, ___value2);
 	return icallRetVal;
 }
@@ -8981,13 +8897,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t MeshGenerationResult_get_
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* InputFeatureUsage_1_get_name_m3732CF9955C758D341A6605EEF5F83A9702B0974_gshared_inline (InputFeatureUsage_1_t28793BE3C4ACB9F1B34C0C392EAAFB16A5FA8E40 * __this, const RuntimeMethod* method)
-{
-	{
-		String_t* L_0 = (String_t*)__this->get_U3CnameU3Ek__BackingField_0();
-		return (String_t*)L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* InputFeatureUsage_1_get_name_mB77B23ABBBDC4E924A8D17797EFD3488110EA770_gshared_inline (InputFeatureUsage_1_t9525982C3C73085CB36503407750B9DE0E598BE1 * __this, const RuntimeMethod* method)
 {
 	{
 		String_t* L_0 = (String_t*)__this->get_U3CnameU3Ek__BackingField_0();
