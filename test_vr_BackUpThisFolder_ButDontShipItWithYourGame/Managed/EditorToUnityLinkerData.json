@@ -307,6 +307,15 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Rigidbody",
+            "fullManagedTypeName": "UnityEngine.Rigidbody",
+            "moduleName": "Physics",
+            "usedInScenes": [
+                "Assets/Scenes/SampleScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "Collider",
             "fullManagedTypeName": "UnityEngine.Collider",
             "moduleName": "Physics",
@@ -477,6 +486,20 @@
             ]
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Grid",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TruckController",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "Oculus.Spatializer.dll",
             "nativeClass": "",
             "fullManagedTypeName": "ONSPSettings",
@@ -620,13 +643,6 @@
             "managedAssemblyName": "Unity.XR.OpenXR.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.XR.OpenXR.OpenXRSettings",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Unity.XR.WindowsMixedReality.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.XR.WindowsMR.WindowsMRSettings",
             "moduleName": "",
             "usedInScenes": []
         },

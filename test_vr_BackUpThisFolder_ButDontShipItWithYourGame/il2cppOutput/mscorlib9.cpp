@@ -15616,8 +15616,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int16_t Marshal_ReadInt16_mEB26E69499F453F1B2
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Marshal_ClearUnicode_m31728CC8AAFF8A546DB3CE173C4DD363F16205CB (intptr_t ___ptr0, const RuntimeMethod* method);
 // System.Void System.Runtime.InteropServices.Marshal::FreeHGlobal(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Marshal_FreeHGlobal_m53FC4846F5D3106BA25B52C321005C227E424F72 (intptr_t ___hglobal0, const RuntimeMethod* method);
-// System.Object System.Runtime.InteropServices.Marshal::GetObjectForCCW(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Marshal_GetObjectForCCW_m09B48E0EA93B825DD58289729059E2A589106B4F (intptr_t ___pUnk0, const RuntimeMethod* method);
 // System.Void System.Buffer::Memcpy(System.Byte*,System.Byte*,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Buffer_Memcpy_m67752CDFBB079C42EFA9EBA2BB9A0C96DFAA2178 (uint8_t* ___dest0, uint8_t* ___src1, int32_t ___size2, const RuntimeMethod* method);
 // System.Int32 System.IntPtr::get_Size()
@@ -29664,30 +29662,6 @@ IL_0005:
 		NullCheck(L_1);
 		int32_t L_2 = L_1->get__HResult_11();
 		return L_2;
-	}
-}
-// System.Object System.Runtime.InteropServices.Marshal::GetObjectForCCW(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Marshal_GetObjectForCCW_m09B48E0EA93B825DD58289729059E2A589106B4F (intptr_t ___pUnk0, const RuntimeMethod* method)
-{
-	typedef RuntimeObject * (*Marshal_GetObjectForCCW_m09B48E0EA93B825DD58289729059E2A589106B4F_ftn) (intptr_t);
-	using namespace il2cpp::icalls;
-	return ((Marshal_GetObjectForCCW_m09B48E0EA93B825DD58289729059E2A589106B4F_ftn)mscorlib::System::Runtime::InteropServices::Marshal::GetObjectForCCW) (___pUnk0);
-}
-// System.Object System.Runtime.InteropServices.Marshal::GetObjectForIUnknown(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Marshal_GetObjectForIUnknown_m9D5CB9B12B72BC4CCC46E363C805A03FFE644443 (intptr_t ___pUnk0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Marshal_tEBAFAE20369FCB1B38C49C4E27A8D8C2C4B55058_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		intptr_t L_0 = ___pUnk0;
-		IL2CPP_RUNTIME_CLASS_INIT(Marshal_tEBAFAE20369FCB1B38C49C4E27A8D8C2C4B55058_il2cpp_TypeInfo_var);
-		RuntimeObject * L_1;
-		L_1 = Marshal_GetObjectForCCW_m09B48E0EA93B825DD58289729059E2A589106B4F((intptr_t)L_0, /*hidden argument*/NULL);
-		return L_1;
 	}
 }
 // System.Int32 System.Runtime.InteropServices.Marshal::GetLastWin32Error()
